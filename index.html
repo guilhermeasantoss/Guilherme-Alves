@@ -514,6 +514,63 @@ header.scrolled {
 
 /* Terminal */
 .sobre-terminal { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+
+/* Formação */
+.formacao {
+    margin-top: 1.75rem;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+}
+.formacao-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--c-muted);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--c-border);
+}
+.formacao-prefix { color: var(--c-cyan); margin-right: 2px; }
+.formacao-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--c-border);
+}
+.formacao-item:last-child { border-bottom: none; padding-bottom: 0; }
+.formacao-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--c-muted);
+    flex-shrink: 0;
+}
+.formacao-dot.cursando {
+    background: var(--c-cyan);
+    box-shadow: 0 0 8px rgba(0,200,255,0.6);
+    animation: pulse-dot 2s ease infinite;
+}
+.formacao-info { display: flex; align-items: center; justify-content: space-between; flex: 1; gap: 8px; flex-wrap: wrap; }
+.formacao-curso { font-family: var(--font-ui); font-size: 0.9rem; color: var(--c-white); font-weight: 600; }
+.formacao-status {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+.formacao-status.concluido {
+    color: var(--c-muted);
+    border: 1px solid var(--c-border);
+    background: transparent;
+}
+.formacao-status.cursando-label {
+    color: var(--c-cyan);
+    border: 1px solid rgba(0,200,255,0.3);
+    background: var(--c-cyan-dim);
+}
 .terminal-header { background: var(--c-surface2); padding: 0.7rem 1rem; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--c-border); }
 .terminal-controls { display: flex; gap: 6px; }
 .terminal-controls span { width: 12px; height: 12px; border-radius: 50%; background: var(--c-border); }
@@ -881,6 +938,27 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
                         <span class="badge">Mobile First</span>
                         <span class="badge">SEO</span>
                     </div>
+
+                    <div class="formacao">
+                        <div class="formacao-title">
+                            <span class="formacao-prefix">~/</span>FORMAÇÃO
+                        </div>
+                        <div class="formacao-item">
+                            <div class="formacao-dot"></div>
+                            <div class="formacao-info">
+                                <span class="formacao-curso">Técnico em Informática</span>
+                                <span class="formacao-status concluido">Concluído</span>
+                            </div>
+                        </div>
+                        <div class="formacao-item">
+                            <div class="formacao-dot cursando"></div>
+                            <div class="formacao-info">
+                                <span class="formacao-curso">Análise e Desenvolvimento de Sistemas</span>
+                                <span class="formacao-status cursando-label">Cursando</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div style="margin-top: 2rem;">
                         <a href="GUILHERME-ALVES-DOS-SANTOS1.pdf" download="Curriculo_Guilherme_Alves.pdf" class="btn-download">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -915,6 +993,7 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
                             <div class="t-output indent"><span class="t-key">"localização"</span>: <span class="t-val">"Brasil"</span>,</div>
                             <div class="t-output indent"><span class="t-key">"experiência"</span>: <span class="t-val">"3+ anos"</span>,</div>
                             <div class="t-output indent"><span class="t-key">"idiomas"</span>: [<span class="t-val">"PT"</span>, <span class="t-val">"EN"</span>],</div>
+                            <div class="t-output indent"><span class="t-key">"formação"</span>: <span class="t-val">"ADS - Cursando"</span>,</div>
                             <div class="t-output indent"><span class="t-key">"hobby"</span>: <span class="t-val">"UI Design"</span></div>
                             <div class="t-output">}</div>
                             <div class="t-line"><span class="t-prompt">~$</span> <span class="t-cursor">▋</span></div>
