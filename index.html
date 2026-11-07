@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
     <style>
 /* ═══════════════════════════════════════════════════
    GUILHERME ALVES — PORTFOLIO
-   Aesthetic: Cyberpunk / Tech — Dark + Light Theme
+   Aesthetic: Cyberpunk / Tech — Dark Theme
    Fonts: Share Tech Mono · Rajdhani · Exo 2
 ═══════════════════════════════════════════════════ */
 
-/* ── DARK THEME (default) ── */
-[data-theme="dark"] {
+/* ── THEME (dark only) ── */
+:root {
     --c-bg:        #040810;
     --c-surface:   #080f1e;
     --c-surface2:  #0d1b30;
@@ -39,35 +39,6 @@
     --c-overlay-card: rgba(4, 8, 16, 0.85);
     --glow-cyan:   0 0 20px rgba(0, 200, 255, 0.4), 0 0 60px rgba(0, 200, 255, 0.15);
     --glow-green:  0 0 20px rgba(0, 255, 136, 0.4);
-}
-
-/* ── LIGHT THEME ── */
-[data-theme="light"] {
-    --c-bg:        #f0f4f8;
-    --c-surface:   #ffffff;
-    --c-surface2:  #e8eef5;
-    --c-border:    rgba(0, 130, 180, 0.18);
-    --c-cyan:      #0078a8;
-    --c-cyan-dim:  rgba(0, 120, 168, 0.08);
-    --c-cyan-glow: rgba(0, 120, 168, 0.25);
-    --c-green:     #00875a;
-    --c-green-dim: rgba(0, 135, 90, 0.08);
-    --c-magenta:   #d6005a;
-    --c-white:     #0d1b2a;
-    --c-muted:     #6b8aaa;
-    --c-text:      #2a4a6a;
-    --c-code-bg:   #e4ecf4;
-    --c-nav-mobile:#f0f4f8;
-    --c-header-scrolled: rgba(240, 244, 248, 0.95);
-    --c-photo-overlay: rgba(240,244,248,0.7);
-    --c-scan-overlay: rgba(0,0,0,0.02);
-    --c-overlay-card: rgba(240, 244, 248, 0.9);
-    --glow-cyan:   0 0 20px rgba(0, 120, 168, 0.3), 0 0 40px rgba(0, 120, 168, 0.1);
-    --glow-green:  0 0 20px rgba(0, 135, 90, 0.3);
-}
-
-/* ── DESIGN TOKENS (shared) ── */
-:root {
     --font-mono:   'Share Tech Mono', monospace;
     --font-display:'Exo 2', sans-serif;
     --font-ui:     'Rajdhani', sans-serif;
@@ -115,7 +86,6 @@ ul { list-style: none; }
     pointer-events: none;
     transition: opacity 0.4s;
 }
-[data-theme="light"] .grid-bg { opacity: 0.4; }
 
 .grid-bg::after {
     content: '';
@@ -212,27 +182,6 @@ header.scrolled {
 .nav-cta .arrow { transition: transform 0.3s; }
 .nav-cta:hover .arrow { transform: translateX(4px); }
 
-/* ── THEME TOGGLE ── */
-.theme-toggle {
-    background: none;
-    border: 1px solid var(--c-border);
-    border-radius: var(--radius);
-    padding: 0.45rem 0.7rem;
-    cursor: pointer;
-    display: flex; align-items: center; gap: 6px;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--c-muted);
-    letter-spacing: 0.08em;
-    transition: var(--transition);
-    margin-left: 0.5rem;
-}
-.theme-toggle:hover { border-color: var(--c-cyan); color: var(--c-cyan); }
-.theme-toggle svg { transition: transform 0.4s ease; }
-.theme-toggle:hover svg { transform: rotate(20deg); }
-[data-theme="light"] .icon-moon { display: none; }
-[data-theme="dark"] .icon-sun { display: none; }
-
 /* Hamburger */
 .hamburger {
     display: none;
@@ -314,8 +263,6 @@ header.scrolled {
     box-shadow: var(--glow-green);
     transform: translateY(-2px);
 }
-[data-theme="light"] .btn-download { border-color: rgba(0, 135, 90, 0.3); }
-
 /* ═══════════ HERO ═══════════ */
 .hero {
     min-height: 100vh;
@@ -640,6 +587,15 @@ header.scrolled {
     font-size: 0.65rem;
     color: var(--c-muted);
 }
+.card-preview.has-cover::before { display: none; }
+.card-preview.has-cover img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 .card-overlay {
     position: absolute; inset: 0;
@@ -752,11 +708,9 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
         transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         z-index: 99;
     }
-    [data-theme="light"] .nav-links { background: rgba(240, 244, 248, 0.97); }
     .nav-links.open { right: 0; }
     .nav-item { font-size: 1.1rem; padding: 0.75rem 0; width: 100%; }
     .nav-cta { margin-left: 0; margin-top: 1rem; width: 100%; justify-content: center; }
-    .theme-toggle { margin-left: 0; margin-top: 0.5rem; width: 100%; justify-content: center; }
     .hero { padding: 6rem 5% 3rem; min-height: auto; }
     .hero-title { font-size: clamp(2.8rem, 12vw, 4rem); }
     .hero-stats { gap: 1.25rem; }
@@ -812,13 +766,6 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
                 <a href="#projetos" class="nav-item" data-text="PROJETOS">PROJETOS</a>
                 <a href="#stack" class="nav-item" data-text="STACK">STACK</a>
                 <a href="mailto:santt438@gmail.com" class="nav-cta">CONTATO <span class="arrow">→</span></a>
-                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-                    <!-- Moon (dark mode indicator) -->
-                    <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                    <!-- Sun (light mode indicator) -->
-                    <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                    <span id="themeLabel">LIGHT</span>
-                </button>
             </nav>
         </div>
     </header>
@@ -1012,7 +959,7 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
                 <h2 class="section-title">PROJETOS<span class="accent">.</span></h2>
             </div>
 
-            <div class="project-grid">
+            <div class="project-grid" id="projectGrid">
 
                 <!-- Infocopa -->
                 <article class="project-card" data-index="01">
@@ -1432,24 +1379,6 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
     </footer>
 
     <script>
-    // ── THEME TOGGLE ──
-    const html = document.documentElement;
-    const themeToggle = document.getElementById('themeToggle');
-    const themeLabel = document.getElementById('themeLabel');
-
-    // Load saved theme
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    html.setAttribute('data-theme', savedTheme);
-    themeLabel.textContent = savedTheme === 'dark' ? 'LIGHT' : 'DARK';
-
-    themeToggle.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        themeLabel.textContent = next === 'dark' ? 'LIGHT' : 'DARK';
-    });
-
     // ── CURSOR PERSONALIZADO ──
     const cursor = document.getElementById('cursor');
     const trail = document.getElementById('cursorTrail');
@@ -1583,5 +1512,6 @@ footer { border-top: 1px solid var(--c-border); padding: 2rem 6%; position: rela
         });
     });
     </script>
+    <script type="module" src="js/projects.js"></script>
 </body>
 </html>

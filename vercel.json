@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm --prefix admin ci",
+  "buildCommand": "npm --prefix admin run build && npm --prefix admin run sync:public -- --soft",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/admin/assets/:path*",
+      "destination": "/admin-dist/assets/:path*"
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin-dist/index.html"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/admin-dist/index.html"
+    }
+  ]
+}

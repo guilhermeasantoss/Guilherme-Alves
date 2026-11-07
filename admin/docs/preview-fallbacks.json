@@ -1,0 +1,65 @@
+{
+  "source": "index.html project-card previews",
+  "note": "Visual fallbacks for public rendering when image_url is null. Not stored in Supabase.",
+  "previews": [
+    {
+      "slug": "infocopa",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #060d1a 0%, #0a1f35 100%)",
+      "previewUrl": "info-copa.vercel.app"
+    },
+    {
+      "slug": "atletico-mineiro",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #060d1a 0%, #1a0a0a 100%)",
+      "previewUrl": "atletico-mineiro.vercel.app"
+    },
+    {
+      "slug": "movieplay",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #06080f 0%, #0d0a1a 100%)",
+      "previewUrl": "movieplay-filmes.vercel.app"
+    },
+    {
+      "slug": "saborify",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #060d0a 0%, #0a1a0e 100%)",
+      "previewUrl": "saborify-receitas.vercel.app"
+    },
+    {
+      "slug": "spectrum",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #080610 0%, #150a2a 100%)",
+      "previewUrl": "spectrum-ruddy.vercel.app",
+      "badge": "DESTAQUE"
+    },
+    {
+      "slug": "life-up-suplementos",
+      "type": "video",
+      "gradient": "linear-gradient(135deg, #0a1a0f 0%, #1a0a1a 100%)",
+      "videoSrc": "lifeup-video.mp4",
+      "overlayLabel": "VER VÍDEO",
+      "badge": "DESTAQUE"
+    },
+    {
+      "slug": "canes-ai",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #07131f 0%, #102c3a 100%)",
+      "previewUrl": "canes-ai.vercel.app",
+      "badge": "DESTAQUE"
+    },
+    {
+      "slug": "urban-barber",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #17110b 0%, #3a2414 100%)",
+      "previewUrl": "urban-barber-six.vercel.app"
+    },
+    {
+      "slug": "controle-de-gastos-financeiros",
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #071a15 0%, #0b3a2c 100%)",
+      "previewUrl": "cgasto-financeiro.vercel.app",
+      "badge": "NOVO"
+    }
+  ]
+}

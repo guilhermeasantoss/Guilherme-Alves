@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-11-07T03:03:18.137Z",
+  "source": "supabase.projects published",
+  "projects": [
+    {
+      "id": "cda2a811-6162-47cf-a1f2-2c214a410619",
+      "title": "Infocopa",
+      "slug": "infocopa",
+      "short_description": "Plataforma de informações sobre a Copa do Mundo com dados em tempo real, classificações e estatísticas dos times.",
+      "description": "Plataforma de informações sobre a Copa do Mundo com dados em tempo real, classificações e estatísticas dos times.",
+      "image_url": null,
+      "project_url": "https://info-copa.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "React",
+        "API",
+        "Football"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": false,
+      "published": true,
+      "sort_order": 1,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "2e55823c-650f-41c9-9728-085bd0d5fd45",
+      "title": "Atlético Mineiro",
+      "slug": "atletico-mineiro",
+      "short_description": "Site fan-made do Atlético Mineiro com design moderno, informações do clube e destaque para o Galo.",
+      "description": "Site fan-made do Atlético Mineiro com design moderno, informações do clube e destaque para o Galo.",
+      "image_url": null,
+      "project_url": "https://atletico-mineiro-three.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "JavaScript",
+        "CSS3",
+        "Sports"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": false,
+      "published": true,
+      "sort_order": 2,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "ed0294e9-860e-4889-9cea-ae3a3d85e519",
+      "title": "MoviePlay",
+      "slug": "movieplay",
+      "short_description": "Aplicação de catálogo de filmes com busca, filtros por gênero e detalhes completos de cada título.",
+      "description": "Aplicação de catálogo de filmes com busca, filtros por gênero e detalhes completos de cada título.",
+      "image_url": null,
+      "project_url": "https://movieplay-filmes.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "React",
+        "TMDB API",
+        "Movies"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": false,
+      "published": true,
+      "sort_order": 3,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "01700af6-962d-4b3c-bb18-fc6cf16e0251",
+      "title": "Saborify",
+      "slug": "saborify",
+      "short_description": "Plataforma de receitas culinárias com busca por ingredientes, categorias e instruções passo a passo.",
+      "description": "Plataforma de receitas culinárias com busca por ingredientes, categorias e instruções passo a passo.",
+      "image_url": null,
+      "project_url": "https://saborify-receitas.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "React",
+        "Tailwind",
+        "Receitas"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": false,
+      "published": true,
+      "sort_order": 4,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "751cf148-1669-4d25-9887-de88b5f20838",
+      "title": "Spectrum",
+      "slug": "spectrum",
+      "short_description": "Plataforma educacional com foco em  adaptação de materiais para crianças neurodivergentes",
+      "description": "Plataforma educacional com foco em  adaptação de materiais para crianças neurodivergentes",
+      "image_url": null,
+      "project_url": "https://spectrum-ruddy.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "React",
+        "CSS3",
+        "Design"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": true,
+      "published": true,
+      "sort_order": 5,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "9d0ab9e3-cc85-419f-8bbc-3918ec667f70",
+      "title": "Life Up - Suplementos",
+      "slug": "life-up-suplementos",
+      "short_description": "Plataforma completa para acesso e compartilhamento de suplementos acadêmicos com sistema de cadastro, upload de materiais e painel administrativo.",
+      "description": "Plataforma completa para acesso e compartilhamento de suplementos acadêmicos com sistema de cadastro, upload de materiais e painel administrativo.",
+      "image_url": null,
+      "project_url": null,
+      "github_url": null,
+      "technologies": [
+        "Full Stack",
+        "Projeto Integrador",
+        "Acadêmico"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": true,
+      "published": true,
+      "sort_order": 6,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "78bb3259-a3a5-4660-bbe3-7a828b32e5f2",
+      "title": "CANES AI",
+      "slug": "canes-ai",
+      "short_description": "Assistente pessoal inteligente para organizar tarefas, esclarecer dúvidas, estudar e resolver problemas.",
+      "description": "Assistente pessoal inteligente para organizar tarefas, esclarecer dúvidas, estudar e resolver problemas.",
+      "image_url": null,
+      "project_url": "https://canes-ai.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "JavaScript",
+        "Cohere AI",
+        "Assistente"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": true,
+      "published": true,
+      "sort_order": 7,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "cd245427-f520-4142-859c-778286135e96",
+      "title": "Urban Barber",
+      "slug": "urban-barber",
+      "short_description": "Site moderno para barbearia com apresentação de serviços, equipe, infraestrutura, avaliações e agendamento.",
+      "description": "Site moderno para barbearia com apresentação de serviços, equipe, infraestrutura, avaliações e agendamento.",
+      "image_url": null,
+      "project_url": "https://urban-barber-six.vercel.app/",
+      "github_url": null,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": false,
+      "published": true,
+      "sort_order": 8,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    },
+    {
+      "id": "e0db9054-6f86-4385-a1bd-9d42a811b82a",
+      "title": "Controle de Gastos Financeiros",
+      "slug": "controle-de-gastos-financeiros",
+      "short_description": "Aplicação para organizar gastos pessoais, acompanhar movimentações e ter mais controle sobre a vida financeira.",
+      "description": "Aplicação para organizar gastos pessoais, acompanhar movimentações e ter mais controle sobre a vida financeira.",
+      "image_url": null,
+      "project_url": "https://cgasto-financeiro.vercel.app/index.html",
+      "github_url": null,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "category": "Projetos",
+      "status": "completed",
+      "featured": true,
+      "published": true,
+      "sort_order": 9,
+      "created_at": "2026-11-07T02:56:09.796973+00:00",
+      "updated_at": "2026-11-07T02:56:09.796973+00:00"
+    }
+  ]
+}

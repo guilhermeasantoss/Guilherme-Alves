@@ -1,0 +1,3 @@
+/** Copy to config.js and fill with your public Supabase values. */
+export const SUPABASE_URL = 'https://YOUR_PROJECT.supabase.co';
+export const SUPABASE_ANON_KEY = 'YOUR_PUBLISHABLE_OR_ANON_KEY';

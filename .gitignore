@@ -1,0 +1,8 @@
+node_modules/
+admin/.env
+admin/.env.*
+!admin/.env.example
+admin-dist/
+admin/dist/
+.vercel/
+.idea/
