@@ -56,9 +56,9 @@ Uploads usam apenas o bucket `project-images` e a sessão do usuário; novas cap
 
 ## Vercel
 
-`vercel.json` mantém a raiz do projeto como diretório de publicação, executa o build da aplicação administrativa e reescreve `/admin` e `/admin/*` para os arquivos gerados em `admin-dist/`. O Vite usa `/admin/` como base dos assets. O `index.html` e os recursos públicos existentes continuam na raiz.
+`vercel.json` mantém a raiz do projeto como diretório de publicação e executa o build da aplicação administrativa. As regras de rota encaminham `/admin`, `/admin/*` e os assets para `admin-dist/` antes da busca por arquivos estáticos, evitando que o `admin/index.html` de desenvolvimento seja servido no lugar do bundle compilado. O Vite usa `/admin/` como base dos assets. O `index.html` e os recursos públicos existentes continuam na raiz.
 
-No projeto Vercel conectado ao repositório, mantenha **Root Directory** na raiz do repositório e confira as variáveis `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` em cada ambiente necessário. A configuração versionada define instalação e build; não é necessário alterar a rota do site público nem configurar um segundo projeto Vercel. A publicação não foi executada.
+No projeto Vercel conectado ao repositório, mantenha **Root Directory** na raiz do repositório e confira as variáveis `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` em cada ambiente necessário. A configuração versionada define instalação, build e roteamento; não é necessário alterar a rota do site público nem configurar um segundo projeto Vercel.
 
 ## Listagem pública e recuperação
 

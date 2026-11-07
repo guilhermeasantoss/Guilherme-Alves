@@ -3,18 +3,21 @@
   "installCommand": "npm --prefix admin ci",
   "buildCommand": "npm --prefix admin run build && npm --prefix admin run sync:public -- --soft",
   "outputDirectory": ".",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/admin/assets/:path*",
-      "destination": "/admin-dist/assets/:path*"
+      "src": "^/admin/assets/(.*)$",
+      "dest": "/admin-dist/assets/$1"
     },
     {
-      "source": "/admin",
-      "destination": "/admin-dist/index.html"
+      "src": "^/admin/?$",
+      "dest": "/admin-dist/index.html"
     },
     {
-      "source": "/admin/:path*",
-      "destination": "/admin-dist/index.html"
+      "src": "^/admin/.*$",
+      "dest": "/admin-dist/index.html"
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
